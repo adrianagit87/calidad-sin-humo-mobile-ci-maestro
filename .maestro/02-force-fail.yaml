@@ -1,0 +1,14 @@
+# Flow deliberadamente roto — valida que el step `Upload artifacts on failure`
+# del workflow.yml realmente sube screenshots cuando algo falla.
+#
+# Este flow será ELIMINADO después de verificar artifacts. NO formará parte
+# del estado final del repo. Si lo ves en main, algo salió mal con la limpieza.
+
+appId: org.wikipedia
+tags:
+  - force-fail
+  - artifacts-validation
+---
+- launchApp
+- takeScreenshot: 01-before-fail
+- assertVisible: "TextoInexistenteParaForzarFalloYValidarArtifacts"
