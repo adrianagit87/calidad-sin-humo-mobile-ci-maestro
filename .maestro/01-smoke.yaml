@@ -1,0 +1,14 @@
+# Smoke test mínimo — valida que toda la infra de CI funciona.
+# Si esto pasa verde: el emulador booteó, Maestro está instalado, la APK
+# se instaló correctamente, y la app arranca sin crashear.
+#
+# Es el "Hola mundo" de Maestro en CI. Si esto falla, el problema NO es
+# tu suite de tests — es la infraestructura.
+
+appId: org.wikipedia
+tags:
+  - smoke
+  - ci
+---
+- launchApp
+- takeScreenshot: 01-launch

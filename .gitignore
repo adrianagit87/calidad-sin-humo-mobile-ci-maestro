@@ -1,0 +1,17 @@
+# Maestro samples (bajados con `maestro download-samples` — NO commitear)
+samples/
+
+# Maestro outputs locales
+.maestro/screenshots/
+.maestro/.maestro/
+*.png
+*.mp4
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
